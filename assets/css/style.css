@@ -1,0 +1,48 @@
+body{
+    background-image: url("../images/g.jpg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#start_button{
+    font-size: 30px;
+    background-color: violet;
+    color: black;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+div {
+  margin-bottom: 20px;
+}
+.correct, .incorrect {
+  text-transform: capitalize;
+}
+.correct{
+    color: green;
+    margin: 0 auto;
+}
+.incorrect{
+    color: red;
+}
+button{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width:400px;
+    align-content: center;
+    margin: auto;
+   
+}
