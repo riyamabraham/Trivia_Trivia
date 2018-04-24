@@ -122,6 +122,11 @@ $("#start_button").click(function () {
     Trivia.ask();
 });
 
+
+//this will happen when we click the button
+//get the id clicked by the user
+//check if userpick and id matches
+
 $('#choices_div').on('click', 'button', function (e) {
     var userPick = $(this).data("id"),
         trivia = Trivia || $(window).trivia(),
@@ -132,7 +137,6 @@ $('#choices_div').on('click', 'button', function (e) {
             $('#choices_div').text("Wrong Answer! The correct answer was: " + correct).css("color","red");
             var gif = $("<img>");
             gif.attr("src", trivia.questions[trivia.current].images);
-            console.log(gif);
             $('#image').append(gif);
             trivia.answer(false);
         
@@ -140,7 +144,6 @@ $('#choices_div').on('click', 'button', function (e) {
         $('#choices_div').text("Correct!!! The correct answer was: " + correct).css("color","green");
         var gif = $("<img>");
         gif.attr("src", trivia.questions[trivia.current].images);
-        console.log(gif);
         $('#image').append(gif);
         trivia.answer(true);
     }
